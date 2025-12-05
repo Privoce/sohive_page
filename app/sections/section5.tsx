@@ -19,8 +19,10 @@ export function Section5() {
       </div>
       <div className={styles.section5_boxs}>
         <div className={styles.section5_boxs_item}>
-          <div className={styles.section5_boxs_item_img}></div>
-          <div style={{ fontWeight: 700, fontSize: 18 }}>Anyone can join</div>
+          {/* <div className={styles.section5_boxs_item_img}></div> */}
+          <div style={{ fontWeight: 700, fontSize: 18 }}>
+            Anyone, Anywhere, Anytime can join
+          </div>
           <div style={{ fontSize: 14, lineHeight: 1.6, marginBottom: 16 }}>
             Allow prospects to join your live chat without needing an
             invitation, making it easy to connect with new customers and expand
@@ -28,35 +30,39 @@ export function Section5() {
           </div>
         </div>
         <div className={styles.section5_boxs_item}>
-          <div className={styles.section5_boxs_item_img}></div>
+          {/* <div className={styles.section5_boxs_item_img}></div> */}
           <div style={{ fontWeight: 700, fontSize: 18 }}>
-            Set It and Forget It
+            Patent-Protected Technology
           </div>
           <div style={{ fontSize: 14, lineHeight: 1.6, marginBottom: 16 }}>
-            Simply add your SoHive link to your website once, and forget about
-            constant updates. Your virtual room stays active without the need to
-            create new meeting links.
+            Our platform is built on proprietary, patent-protected innovation
+            that competitors cannot replicate. This ensures your business stays
+            ahead with unique capabilities and long-term differentiation in the
+            market.
           </div>
         </div>
         <div className={styles.section5_boxs_item}>
-          <div className={styles.section5_boxs_item_img}></div>
-          <div style={{ fontWeight: 700, fontSize: 18 }}>Easy to Join</div>
+          {/* <div className={styles.section5_boxs_item_img}></div> */}
+          <div style={{ fontWeight: 700, fontSize: 18 }}>
+            Built for E-Commerce Leaders
+          </div>
           <div style={{ fontSize: 14, lineHeight: 1.6, marginBottom: 16 }}>
-            Joining a Hive is straightforward and hassle-free. Users connect
-            instantly, enhancing your digital customer engagement efforts and
-            making every interaction smooth and effective.
+            Designed specifically for high-volume online brands, the system
+            scales seamlessly with customer demand. From conversion optimization
+            to customer experience, every feature is tailored to help e-commerce
+            teams drive measurable growth.
           </div>
         </div>
         <div className={styles.section5_boxs_item}>
-          <div className={styles.section5_boxs_item_img}></div>
+          {/* <div className={styles.section5_boxs_item_img}></div> */}
           <div style={{ fontWeight: 700, fontSize: 18 }}>
-            Effortless Management
+            Secure, Compliant, and Reliable
           </div>
           <div style={{ fontSize: 14, lineHeight: 1.6, marginBottom: 16 }}>
-            Manage your virtual room easily with SoHive’s user-friendly
-            platform. Make updates to your Hive without changing your website.
-            SoHive manages the changes behind the scenes, instantly reflecting
-            adjustments in the Hive Tile.
+            Enterprise-grade encryption and data protection ensure every
+            interaction is safe and compliant with global standards. With a
+            highly reliable infrastructure, your team can operate confidently
+            knowing uptime and customer privacy are always safeguarded.
           </div>
         </div>
       </div>

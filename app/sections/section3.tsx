@@ -117,7 +117,7 @@ export function Section3() {
           </div>
         </div>
         <div className={styles.section3_box_item}>
-            <span
+          <span
             style={{
               position: "absolute",
               zIndex: 111,
@@ -157,7 +157,7 @@ export function Section3() {
           </div>
         </div>
         <div className={styles.section3_box_item}>
-            <span
+          <span
             style={{
               position: "absolute",
               zIndex: 111,
@@ -203,12 +203,39 @@ export function Section3() {
           textAlign: "center",
           letterSpacing: 1.2,
           marginTop: 16,
+          display: "inline-flex",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
-        <span style={{ color: "#DD9034" }}>
+        {/* <span style={{ color: "#DD9034" }}>
           *SoHive helps you embrace these trends
         </span>{" "}
-        to boost engagement, personalization and growth
+        to boost engagement, personalization and growth */}
+        <div className={styles.section4_left_header} style={{width: "fit-content"}}>
+          <div>
+            <SvgIcon ty="logo_only"></SvgIcon>
+          </div>
+          <div style={{ marginBottom: 12 }}>
+            <div style={{ position: "relative", width: "fit-content" }}>
+              <span style={{ color: "#FF8E26" }}> SoHive helps</span>&nbsp;you
+              embrace these trends
+              <span style={{ position: "absolute", left: 0, bottom: -20 }}>
+                <SvgIcon ty="divider" width={220} strokeWidth={8}></SvgIcon>
+              </span>
+            </div>
+            <div style={{ position: "relative" }}>
+              to boost engagement,
+              <span style={{ color: "#FF8E26" }}>
+                {" "}
+                personalization and growth
+              </span>
+              <span style={{ position: "absolute", right: 0, bottom: -24 }}>
+                <SvgIcon ty="divider" width={480} strokeWidth={4}></SvgIcon>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

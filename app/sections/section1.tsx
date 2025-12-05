@@ -24,7 +24,8 @@ export function Section1({ style }: SectionProps) {
     },
     {
       icon: <SvgIcon ty="section1_5"></SvgIcon>,
-      label: "Community and Connection on Scale",
+      // label: "Community and Connection on Scale",
+      label: "Connection at Scale",
     },
   ];
 
@@ -153,9 +154,9 @@ export function Section1({ style }: SectionProps) {
                 Host 24/7/365 always-on virtual rooms directly on your website
               </div>
               <div className={styles.inline}>
-                Perfect for personalizing office hours, product launches, and
-                customer interactions. Enhance digital customer
-                engagement--anyone can join instantly without an invitation!
+                Perfect for connecting with customers when they want to buy, but
+                need extra support. Build your digital customer community –
+                anyone can join instantly without an invitation.
               </div>
               <Button
                 style={{
@@ -180,13 +181,15 @@ export function Section1({ style }: SectionProps) {
               className={styles.circle1}
               style={{ backgroundColor: "#C0CBF0" }}
             ></div>
-            <div className={styles.inline} style={{ marginTop: 48 }}>
-              Keep customers and communities connected through scheduled
-              discussions.{" "}
+            <div className={styles.inline} style={{fontSize: 24, fontWeight: 700}}>Scheduled</div>
+            <div className={styles.inline} style={{ marginTop: 0 }}>
+              Open your virtual room during scheduled times, when you have staff
+              available who can actively engage customers.
             </div>
             <div className={styles.inline}>
-              Use our powerful online collaboration tool to stay engaged on
-              relevant topics, especially during scheduled sessions.
+              Schedule your Hive to be live for either one-time events like
+              market research or for recurring times/days like for sales and
+              support.
             </div>
             <Button
               style={{
