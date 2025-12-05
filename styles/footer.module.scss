@@ -1,0 +1,53 @@
+.container {
+  padding: 64px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: calc(160px + 128px);
+  gap: 32px;
+  &_column {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 14px;
+    margin-right: 16px;
+  }
+  &_mid {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+    justify-content: space-between;
+  }
+  &_right {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    &_btns {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 32px;
+    }
+  }
+}
+
+.icon_btn {
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+  &_inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
