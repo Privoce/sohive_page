@@ -159,8 +159,8 @@ export function SvgIcon({
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M22.4937 42.4999L4.80174 11.8564L0.562829 18.9778C-0.18007 20.2259 -0.188055 21.7786 0.541971 23.0342L10.7025 40.5104C11.4186 41.7421 12.7358 42.4999 14.1605 42.4999H22.4937Z"
             fill="#C07823"
           />

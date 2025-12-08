@@ -75,7 +75,7 @@ export function Footer() {
             textAlign: "end",
           }}
         >
-          SoHive, LLC 2021-2024 All Rights Reserved
+          SoHive, LLC 2021-2025 All Rights Reserved
         </div>
       </div>
     </div>
@@ -112,13 +112,13 @@ function IconBtn({ ty }: { ty: "1" | "2" | "3" }) {
             <path
               d="M12 15.75C14.0711 15.75 15.75 14.0711 15.75 12C15.75 9.92893 14.0711 8.25 12 8.25C9.92893 8.25 8.25 9.92893 8.25 12C8.25 14.0711 9.92893 15.75 12 15.75Z"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
               stroke-miterlimit="10"
             />
             <path
               d="M16.125 3.375H7.875C5.38972 3.375 3.375 5.38972 3.375 7.875V16.125C3.375 18.6103 5.38972 20.625 7.875 20.625H16.125C18.6103 20.625 20.625 18.6103 20.625 16.125V7.875C20.625 5.38972 18.6103 3.375 16.125 3.375Z"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
@@ -139,28 +139,28 @@ function IconBtn({ ty }: { ty: "1" | "2" | "3" }) {
             <path
               d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
             <path
               d="M11.25 10.5V16.5"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
             <path
               d="M8.25 10.5V16.5"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
             <path
               d="M11.25 13.125C11.25 12.4288 11.5266 11.7611 12.0188 11.2688C12.5111 10.7766 13.1788 10.5 13.875 10.5C14.5712 10.5 15.2389 10.7766 15.7312 11.2688C16.2234 11.7611 16.5 12.4288 16.5 13.125V16.5"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
@@ -181,14 +181,14 @@ function IconBtn({ ty }: { ty: "1" | "2" | "3" }) {
             <path
               d="M19.125 19.3059C14.3891 19.8246 9.61081 19.8246 4.87497 19.3059C4.05259 19.2118 3.24602 18.4488 3.11505 17.6249C2.54156 13.8968 2.54156 10.103 3.11505 6.37492C3.24606 5.55108 4.05255 4.78813 4.87497 4.6939C9.61081 4.17528 14.3891 4.17528 19.125 4.6939C19.9471 4.78815 20.7541 5.55102 20.8849 6.37492C21.4584 10.103 21.4584 13.8968 20.8849 17.6249C20.754 18.4487 19.9475 19.2118 19.125 19.3059Z"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
             <path
               d="M15 12L10.5 9V15L15 12Z"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
               stroke-linecap="round"
               stroke-linejoin="round"
             />

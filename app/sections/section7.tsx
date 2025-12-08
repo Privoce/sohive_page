@@ -1,24 +1,45 @@
-
+import { Collapse, CollapseProps } from "antd";
 import { SvgIcon } from "../components/svg";
 import styles from "@/styles/home_page.module.scss";
+import Panel from "antd/es/splitter/Panel";
+import { useMemo, useState, useEffect } from "react";
 
 export function Section7() {
   const list = [
-    "Is SoHive right for my business?",
-    "What's in it for me?",
-    "Will SoHive work for my business?",
-    "How long does it take to set up?",
-    "What do I need to do?",
-    "Why should I start using SoHive now?",
-    "How is SoHive different from other products?",
-    "What's included with SoHive?",
-    "What if SoHive doesn’t work for me?",
-    "How can I get started with SoHive?",
+    {
+      title: "What is SoHive?",
+      content: `SoHive provides businesses with their own virtual room, or "Hive,"
+            allowing them to host live office hours or schedule time with
+            customers or the community. Think of it as your business's
+            video-enabled virtual address, which can be easily added to your
+            website, or social media, or shared as a unique URL.`,
+    },
+    {
+      title: "Is SoHive right for my business?",
+      content: "",
+    },
+    { title: "What's in it for me?", content: "" },
+    { title: "Will SoHive work for my business?", content: "" },
+    { title: "How long does it take to set up?", content: "" },
+    { title: "What do I need to do?", content: "" },
+    { title: "Why should I start using SoHive now?", content: "" },
+    { title: "How is SoHive different from other products?", content: "" },
+    { title: "What's included with SoHive?", content: "" },
+    { title: "What if SoHive doesn’t work for me?", content: "" },
+    { title: "How can I get started with SoHive?", content: "" },
   ];
+
+  const [openKey, setOpenKey] = useState<number[]>([]);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    setOpenKey([0]); // 客户端挂载后再设置初始打开状态
+  }, []);
 
   return (
     <div className={styles.section7}>
-      <div style={{ position: "absolute", left: 0, top: 180 }}>
+      <div style={{ position: "absolute", left: 0, top: 180, zIndex: 11 }}>
         <svg
           width="177"
           height="66"
@@ -86,25 +107,76 @@ export function Section7() {
         </div>
       </div>
       <div className={styles.section7_content}>
-        <div className={styles.section7_content_large}>
-          <div className={styles.section7_content_large_header}>
-            <div style={{ fontWeight: 700, fontSize: 18 }}>What is SoHive?</div>
-            <HexagonBtn2 ty="minus"></HexagonBtn2>
-          </div>
-          <div style={{lineHeight: 1.6, letterSpacing: 1}}>
-            {`SoHive provides businesses with their own virtual room, or "Hive,"
-            allowing them to host live office hours or schedule time with
-            customers or the community. Think of it as your business's
-            video-enabled virtual address, which can be easily added to your
-            website, or social media, or shared as a unique URL.`}
-          </div>
-        </div>
+        {/* <div
+          className={styles.section7_content_large}
+          style={{ backgroundColor: "transparent" }}
+        >
+          
+        </div> */}
+
         <div className={styles.section7_content_list}>
           {list.map((item, index) => (
-            <div className={styles.section7_content_list_item} key={index}>
-              <div>{item}</div>
-              <HexagonBtn2></HexagonBtn2>
-            </div>
+            // <div className={styles.section7_content_list_item} key={index}>
+            //   <div>{item}</div>
+            //   <HexagonBtn2></HexagonBtn2>
+            // </div>
+            <Collapse
+              activeKey={openKey}
+              onChange={(e) => {
+                setOpenKey(e.map((key) => Number(key)));
+              }}
+              // className={styles.section7_content_list_item}
+              key={index}
+              style={{ background: "transparent" }}
+              styles={{
+                root: {
+                  width: "100%",
+                },
+                header: {
+                  padding: "16px 24px",
+                  borderRadius: openKey.includes(index) ? "32px 32px 0 0": "32px",
+                  backgroundColor: openKey.includes(index)
+                    ? "#dd9034"
+                    : "#f9f2eb",
+                },
+                body: {
+                  borderRadius:"0px 0px 32px 32px",
+                  padding: "0 24px 16px 24px",
+                  backgroundColor: openKey.includes(index)
+                    ? "#dd9034"
+                    : "#f9f2eb",
+                },
+              }}
+              items={[
+                {
+                  key: index,
+                  label: (
+                    <div
+                      style={{
+                        fontWeight: 700,
+                        fontSize: 18,
+                      }}
+                    >
+                      {item.title}
+                    </div>
+                  ),
+                  children: (
+                    <div style={{ lineHeight: 1.6, letterSpacing: 1 }}>
+                      {item.content}
+                    </div>
+                  ),
+                },
+              ]}
+              bordered={false}
+              expandIcon={(prop) => (
+                <span style={{ marginTop: 4, marginLeft: 8 }}>
+                  <HexagonBtn2
+                    ty={prop.isActive ? "minus" : "normal"}
+                  ></HexagonBtn2>
+                </span>
+              )}
+              expandIconPlacement="end"
+            ></Collapse>
           ))}
         </div>
       </div>
@@ -132,8 +204,6 @@ function HexagonBtn2({ ty = "normal" }: { ty?: "normal" | "minus" }) {
           d="M21.456 0C23.2738 -5.65134e-08 24.9534 0.969756 25.8623 2.54397L31.3183 11.9941C32.2272 13.5683 32.2272 15.5078 31.3183 17.082L25.8623 26.5322C24.9534 28.1064 23.2738 29.0761 21.456 29.0761H10.544C8.72622 29.0761 7.04656 28.1064 6.13768 26.5322L0.681655 17.082C-0.227218 15.5078 -0.227218 13.5683 0.681655 11.9941L6.13769 2.54397C7.04656 0.969756 8.72622 6.52e-07 10.544 5.65014e-07L21.456 0Z"
           fill={ty === "minus" ? "#fff" : "#DD9034"}
         />
-        <path d="M16.3125 8V20.6249" stroke="white" />
-        <path d="M22.6249 14.3125L10 14.3125" stroke="white" />
       </svg>
       <span
         style={{

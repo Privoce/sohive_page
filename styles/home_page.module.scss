@@ -1,3 +1,12 @@
+.page {
+  height: fit-content;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 .container {
   // width: 100vw;
   width: 1440px;
@@ -8,15 +17,24 @@
   box-sizing: content-box;
   overflow-x: hidden;
   overflow-y: hidden;
-  padding-top: 32px;
+  // padding-top: 32px;
   &_bg_left {
-    object-fit: fill;
+    position: absolute;
+    object-fit: contain;
     height: auto;
     margin: 0;
     width: 100%;
+    background: linear-gradient(
+      180deg,
+      #fff 0%,
+      #fefcfa 20%,
+      rgba(244, 165, 72, 0.18) 100%
+    );
+    height: 742px;
+    min-width: 1480px;
   }
   &_bg_right {
-    top: 42%;
+    top: 28%;
     transform: translateY(-50%);
     right: 48px;
     position: absolute;
@@ -30,7 +48,7 @@
     position: absolute;
     bottom: 12px;
     right: 48px;
-    width: 572px;
+    width: 576px;
     border-radius: 32px;
     background-color: #ffffffa0;
     padding: 24px;
@@ -55,8 +73,9 @@
 
 .header {
   width: 100%;
-  position: absolute;
-  top: 16px;
+  // position: absolute;
+  // top: 16px;
+  // transform: translateY(-18px);
   z-index: 111;
 }
 
@@ -67,20 +86,20 @@
   height: fit-content;
   width: 100%;
   overflow: hidden;
-  background: linear-gradient(
-    180deg,
-    #fff 0%,
-    #fefcfa 20%,
-    rgba(244, 165, 72, 0.18) 100%
-  );
+  // background: linear-gradient(
+  //   180deg,
+  //   #fff 0%,
+  //   #fefcfa 20%,
+  //   rgba(244, 165, 72, 0.18) 100%
+  // );
   background-repeat: no-repeat;
   padding: 0;
   &_inner {
     min-width: 648px;
-    position: absolute;
-    top: 56%;
-    transform: translateY(-50%);
-    left: 32px;
+    // position: absolute;
+    // top: 56%;
+    // transform: translateY(-50%);
+    // left: 32px;
     display: flex;
     align-items: flex-start;
     height: fit-content;
@@ -651,9 +670,9 @@
     gap: 16px;
     &_large {
       width: 100%;
-      border-radius: 32px;
-      padding: 24px;
-      background-color: #dd9034;
+      // border-radius: 32px;
+      // padding: 6px 8px;
+      // background-color: #dd9034;
       color: #fff;
       &_header {
         width: 100%;

@@ -287,14 +287,14 @@ function HexagonIcon({
             <path
               d="M43.5004 10.5L25.5004 28.5L18.0004 21L4.50037 34.5"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
             <path
               d="M43.5004 22.5V10.5H31.5004"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
@@ -311,7 +311,7 @@ function HexagonIcon({
             <path
               d="M24 40.5C24 40.5 5.25 30 5.25 17.25C5.25038 14.9965 6.03122 12.8127 7.45977 11.0699C8.88832 9.32701 10.8764 8.13272 13.086 7.69003C15.2956 7.24734 17.5903 7.58358 19.58 8.64158C21.5697 9.69958 23.1315 11.414 24 13.4935L24 13.4935C24.8685 11.414 26.4303 9.69959 28.42 8.64158C30.4097 7.58358 32.7044 7.24734 34.914 7.69003C37.1236 8.13272 39.1117 9.32701 40.5402 11.0699C41.9688 12.8127 42.7496 14.9965 42.75 17.25C42.75 30 24 40.5 24 40.5Z"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
@@ -328,21 +328,21 @@ function HexagonIcon({
             <path
               d="M42 39H6V9"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
             <path
               d="M39.0004 12L24.0004 27L18.0004 21L6.00037 33"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
             <path
               d="M39.0004 19.5V12H31.5004"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
@@ -359,27 +359,27 @@ function HexagonIcon({
             <path
               d="M16.5001 30C21.8848 30 26.2501 25.6348 26.2501 20.25C26.2501 14.8652 21.8848 10.5 16.5001 10.5C11.1153 10.5 6.75006 14.8652 6.75006 20.25C6.75006 25.6348 11.1153 30 16.5001 30Z"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
               stroke-miterlimit="10"
             />
             <path
               d="M29.1398 10.8632C30.4809 10.4853 31.8873 10.3992 33.2644 10.6107C34.6415 10.8222 35.9573 11.3264 37.1232 12.0892C38.289 12.852 39.2779 13.8558 40.0231 15.033C40.7684 16.2102 41.2527 17.5334 41.4435 18.9135C41.6343 20.2936 41.5271 21.6986 41.1292 23.0339C40.7313 24.3691 40.0518 25.6035 39.1367 26.654C38.2215 27.7045 37.0918 28.5468 35.8237 29.1239C34.5557 29.7011 33.1786 29.9998 31.7854 30"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
             <path
               d="M2.99927 37.0119C4.52202 34.8459 6.54357 33.0781 8.89324 31.8577C11.2429 30.6372 13.8517 30.0001 16.4994 30C19.1471 29.9999 21.756 30.6368 24.1058 31.8571C26.4555 33.0773 28.4772 34.845 30.0001 37.0109"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
             <path
               d="M31.7854 30C34.4333 29.9981 37.0428 30.6343 39.3927 31.8546C41.7427 33.075 43.764 34.8437 45.2855 37.0109"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
