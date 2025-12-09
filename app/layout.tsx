@@ -27,7 +27,7 @@ export default function RootLayout({
       }}
     >
       <html lang="en">
-        <body style={{display: "flex", alignItems: "flex-start", justifyContent: "center"}}>
+        <body>
           <AntdRegistry>{children}</AntdRegistry>
         </body>
       </html>

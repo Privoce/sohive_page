@@ -44,39 +44,6 @@ export default function Home() {
           <Header></Header>
         </div>
         <div className={styles.main_section} ref={mainRef}>
-          {/* <div style={{height: 630, width: "100%"}}></div> */}
-          {/* <img
-          className={styles.container_bg_right}
-          src="/home_page/bg_right.png"
-          alt=""
-        /> */}
-          <video
-            src="/bg.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            controls
-            style={{ zIndex: 111 }}
-            className={styles.container_bg_right}
-          ></video>
-          <div className={styles.container_bg_words}>
-            <div style={{ marginBottom: 12 }}>How It Works</div>
-            <ol>
-              <li>
-                <strong>Drop‑In Widget</strong>: Embed SoHive’s patented video
-                engagement widget directly into your product pages in minutes.
-              </li>
-              <li>
-                <strong>Instant Connection</strong>: Customers click to join a
-                live video session — no downloads, no friction.
-              </li>
-              <li>
-                <strong>Trust at Scale</strong>: Answer questions, showcase
-                products, and close sales in real time.
-              </li>
-            </ol>
-          </div>
           {/* <video className={styles.container_bg_right} src=""></video> */}
           <div className={styles.main_section_inner}>
             <div className={styles.main_section_inner_wrapper}>
@@ -169,6 +136,35 @@ export default function Home() {
             >
               Get Started
             </Button>
+          </div>
+          <div className={styles.main_section_right}>
+            <video
+            src="/bg.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            controls
+            style={{ zIndex: 111 }}
+            className={styles.container_bg_right}
+          ></video>
+          <div className={styles.container_bg_words}>
+            <div style={{ marginBottom: 12 }}>How It Works</div>
+            <ol>
+              <li>
+                <strong>Drop‑In Widget</strong>: Embed SoHive’s patented video
+                engagement widget directly into your product pages in minutes.
+              </li>
+              <li>
+                <strong>Instant Connection</strong>: Customers click to join a
+                live video session — no downloads, no friction.
+              </li>
+              <li>
+                <strong>Trust at Scale</strong>: Answer questions, showcase
+                products, and close sales in real time.
+              </li>
+            </ol>
+          </div>
           </div>
         </div>
         <Section1></Section1>
