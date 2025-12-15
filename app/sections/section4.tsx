@@ -26,7 +26,7 @@ export function Section4() {
   }, []);
 
   return (
-    <div className={styles.section4}>
+    <div className={styles.section4} id="solutions">
       <div className={styles.section4_left}>
         <div className={styles.section4_left_header}>
           <div>
@@ -117,6 +117,7 @@ export function Section4() {
             shape="round"
             size="large"
             icon={<SvgIcon ty="sun" />}
+            onClick={() => window.open("https://sohive.com/signup", "_self")}
           >
             Start For Free
           </Button>
@@ -171,7 +172,6 @@ function HexagonBtn({ ty = "normal" }: { ty?: "normal" | "minus" }) {
             <path d="M8 4L0 4" stroke="#DD9034" />
           </svg>
         ) : (
-
           <span className={styles.line}></span>
         )}
       </span>

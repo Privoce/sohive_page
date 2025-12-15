@@ -3,7 +3,7 @@ import styles from "@/styles/home_page.module.scss";
 
 export function Section5() {
   return (
-    <div className={styles.section5}>
+    <div className={styles.section5} id="benefits">
       <div className={styles.section5_header}>
         <SvgIcon ty="logo_only"></SvgIcon>
         <div>

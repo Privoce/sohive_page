@@ -55,7 +55,7 @@ export function Section1({ style }: SectionProps) {
         </svg>
       </div>
       <div className={styles.section1_content}>
-        <div className={styles.section1_bgRight}>
+        <div className={styles.section1_bgRight} style={{ zIndex: 0 }}>
           <SvgIcon ty="logo_right"></SvgIcon>
         </div>
         <div className={styles.section1_content_title}>
@@ -87,7 +87,7 @@ export function Section1({ style }: SectionProps) {
           <DonwloadButton />
         </div>
       </div>
-      <div className={styles.section1_boxs} style={{ height: 407 }}>
+      <div className={styles.section1_boxs} style={{ height: 487 }}>
         <div className={styles.section1_boxs_left}>
           <div className={styles.section1_boxs_left_icon}>
             <svg
@@ -140,12 +140,24 @@ export function Section1({ style }: SectionProps) {
             </svg>
           </div>
           <div className={styles.section1_boxs_left_content}>
-            <div
+            {/* <div
               className={styles.circle1}
               style={{ backgroundColor: "#EA4336" }}
             >
               <div className={styles.circle1_inner}></div>
-            </div>
+            </div> */}
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 80 91"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M36.2266 1.51782C38.5587 0.160287 41.4413 0.160287 43.7734 1.51782L75.7734 20.1448C78.0808 21.488 79.5 23.9573 79.5 26.6272V63.9944C79.4999 66.6642 78.0807 69.1326 75.7734 70.4758L43.7734 89.1028C41.4413 90.4603 38.5587 90.4603 36.2266 89.1028L4.22656 70.4758C1.91933 69.1326 0.500059 66.6641 0.5 63.9944L0.5 26.6272C0.5 23.9573 1.91915 21.488 4.22656 20.1448L36.2266 1.51782Z"
+                fill="#FF8E26"
+              />
+            </svg>
             <div className={styles.section1_boxs_left_content_title}>
               Drop-in Anytime Hives
             </div>
@@ -158,6 +170,9 @@ export function Section1({ style }: SectionProps) {
                 need extra support. Build your digital customer community –
                 anyone can join instantly without an invitation.
               </div>
+              <div className={styles.inline}>
+                SoHive notifies you when someone has joined your Hive. Your notification includes their name and email address.
+              </div>
               <Button
                 style={{
                   fontSize: 16,
@@ -169,6 +184,9 @@ export function Section1({ style }: SectionProps) {
                 type="primary"
                 shape="round"
                 size="large"
+                onClick={() =>
+                  window.open("https://sohive.com/signup", "_self")
+                }
               >
                 Get Started <SvgIcon ty="right" />
               </Button>
@@ -181,7 +199,12 @@ export function Section1({ style }: SectionProps) {
               className={styles.circle1}
               style={{ backgroundColor: "#C0CBF0" }}
             ></div>
-            <div className={styles.inline} style={{fontSize: 24, fontWeight: 700}}>Scheduled</div>
+            <div
+              className={styles.inline}
+              style={{ fontSize: 24, fontWeight: 700 }}
+            >
+              Scheduled
+            </div>
             <div className={styles.inline} style={{ marginTop: 0 }}>
               Open your virtual room during scheduled times, when you have staff
               available who can actively engage customers.
@@ -202,6 +225,7 @@ export function Section1({ style }: SectionProps) {
               type="primary"
               shape="round"
               size="large"
+              onClick={() => window.open("https://sohive.com/signup", "_self")}
             >
               Get Started <SvgIcon ty="right" />
             </Button>

@@ -43,6 +43,12 @@ export function Section6() {
         </div>
         <div className={styles.section6_btns}>
           <DownloadBtn
+            onClick={() =>
+              window.open(
+                "https://apps.apple.com/us/app/sohive/id1596274003",
+                "_self"
+              )
+            }
             width={160}
             fontSizeLB={18}
             icon={<SvgIcon ty="ios" height={28} width={28} />}
@@ -50,6 +56,12 @@ export function Section6() {
           ></DownloadBtn>
 
           <DownloadBtn
+            onClick={() =>
+              window.open(
+                "https://play.google.com/store/apps/details?id=com.sohive&pli=1",
+                "_self"
+              )
+            }
             width={160}
             fontSizeLB={18}
             icon={
@@ -63,6 +75,12 @@ export function Section6() {
             label="Play Store"
           ></DownloadBtn>
           <DownloadBtn
+          onClick={() =>
+              window.open(
+                "https://sohive.com/signup",
+                "_self"
+              )
+            }
             width={160}
             fontSizeLB={18}
             icon={<SvgIcon ty="computer" height={32} width={32} />}

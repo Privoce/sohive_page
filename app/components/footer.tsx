@@ -6,43 +6,80 @@ export function Footer() {
     [
       {
         label: "Solutions",
+        onclick: () => {
+          window.open("https://sohive.com/signup", "_self");
+        },
       },
       {
         label: "How to start",
+        onclick: () => {
+          window.open("https://sohive.com/signup", "_self");
+        },
       },
       {
         label: "Unique Benefits",
+        onclick: () => {
+          // 页面滚动到id为"benefits"的位置
+          const el = document.getElementById("benefits");
+          if (el) {
+            el.scrollIntoView({ behavior: "smooth" });
+          }
+        }
       },
       {
         label: "Business Solutions",
+        onclick: () => {
+          const el = document.getElementById("solutions");
+          if (el) {
+            el.scrollIntoView({ behavior: "smooth" });
+          }
+        }
       },
     ],
     [
       {
         label: "FAQ",
       },
-      {
-        label: "Blog",
-      },
+      // {
+      //   label: "Blog",
+      // },
       {
         label: "Terms and Conditions",
+        onclick: () => {
+          window.open("https://sohive.com/termsandconditions", "_self");
+        },
       },
       {
         label: "Privacy Policy",
+        onclick: () => {
+          window.open("https://sohive.com/privacypolicy.html", "_self");
+        },
       },
     ],
     [
       {
         label: "Contact Us",
+        onclick: () => {
+          window.open("https://sohive.com/contactus", "_self");
+        },
       },
       {
         label: "About Us",
+        onclick: () => {
+          window.open("https://sohive.com/aboutus", "_self");
+        },
       },
       {
         label: "Plans and Pricing",
+        onclick: () => {
+          window.open("https://sohive.com/signup", "_self");
+        },
       },
       {
         label: "Tell Us What You Think",
+        onclick: () => {
+          window.open("https://sohive.com/signup", "_self");
+        },
       },
     ],
   ];
@@ -54,7 +91,12 @@ export function Footer() {
         {list.map((item) => (
           <div key={item[0].label} className={styles.container_column}>
             {item.map((subItem) => (
-              <div key={subItem.label} className={styles.container_item}>
+              <div
+                key={subItem.label}
+                className={styles.container_item}
+                onClick={() => subItem.onclick && subItem.onclick()}
+                style={{ cursor: "pointer" }}
+              >
                 {subItem.label}
               </div>
             ))}

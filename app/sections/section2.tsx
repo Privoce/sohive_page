@@ -2,6 +2,7 @@ import { Button } from "antd";
 import { SvgIcon } from "../components/svg";
 import styles from "@/styles/home_page.module.scss";
 import { ReactNode } from "react";
+import { DonwloadButton } from "../components/header";
 
 export function Section2() {
   return (
@@ -94,7 +95,7 @@ export function Section2() {
               </div>
             </div>
             <div className={styles.section2_content_inner_left_btns}>
-              <DownloadBtn
+              {/* <DownloadBtn
                 icon={<SvgIcon ty="ios" height={40} width={40} />}
                 label="App Store"
               ></DownloadBtn>
@@ -109,7 +110,8 @@ export function Section2() {
                   />
                 }
                 label="Play Market"
-              ></DownloadBtn>
+              ></DownloadBtn> */}
+              <DonwloadButton></DonwloadButton>
             </div>
           </div>
           <div className={styles.section2_content_inner_mid}>
@@ -128,9 +130,9 @@ export function Section2() {
               >
                 <div style={{ width: "100%", fontSize: 24 }}>
                   <strong>Create your Hive</strong>
-                  &nbsp;(dedicated virtual room) on the webite
+                  &nbsp;(dedicated virtual room) on your webite
                 </div>
-                <div style={{ width: "100%" }}>Manage Hives – Add Hive</div>
+                <div style={{ width: "100%" }}>Manage Hives &#8594; Add Hive &#8594; Embed Hive</div>
               </div>
             </div>
 
@@ -163,12 +165,15 @@ export function Section2() {
                   justifyContent: "center",
                   alignItems: "center",
                   gap: 8,
+                  marginRight: 8
                 }}
               >
                 <div style={{ width: "100%", fontSize: 24 }}>
                   <strong>Easily embed your Hive</strong>
-                  &nbsp; on your website or share your drop-in video URL with
+                  <div style={{fontSize: 16}}>
+                    on your website or share your drop-in video URL with
                   others for instant meetings
+                  </div>
                 </div>
                 {/* <div style={{ width: "100%" }}>Manage Hives – Add Hive</div> */}
               </div>
@@ -186,7 +191,7 @@ export function Section2() {
                 display: "flex",
                 alignItems: "center",
                 gap: 16,
-                bottom: "-115px",
+                bottom: "-148px",
                 left: -10,
                 transform: "translateY(50%)",
                 position: "absolute",
@@ -209,7 +214,7 @@ export function Section2() {
                   {/* <strong>Easily embed your Hive</strong>
                   &nbsp; on your website or share your drop-in video URL with
                   others for instant meetings */}
-                  <div>Download the SoHive mobile app to:</div>
+                  <strong style={{fontSize: 24}}>Download the SoHive mobile app to:</strong>
                   <ul>
                     <li>
                       get a text message as soon as someone visits your Hive
@@ -234,12 +239,14 @@ export function DownloadBtn({
   label,
   download = "Download",
   fontSizeLB = 20,
+  onClick
 }: {
   width?: number;
   download?: string;
   icon: ReactNode;
   label: string;
   fontSizeLB?: number;
+  onClick?: ()=> void;
 }) {
   return (
     <Button
@@ -255,6 +262,7 @@ export function DownloadBtn({
       color="primary"
       size="large"
       icon={icon}
+      onClick={onClick}
     >
       <div
         style={{

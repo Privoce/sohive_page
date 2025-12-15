@@ -2,7 +2,7 @@
 
 import styles from "@/styles/header.module.scss";
 import type { MenuProps } from "antd";
-import { Button, Menu } from "antd";
+import { Button, Menu, Popover } from "antd";
 import { useState } from "react";
 import { SvgIcon } from "./svg";
 
@@ -12,7 +12,6 @@ const items: MenuItem[] = [
   {
     label: "Solutions",
     key: "solutions",
-    children: [],
   },
   {
     label: "How to start",
@@ -25,7 +24,6 @@ const items: MenuItem[] = [
   {
     key: "about_us",
     label: "About Us",
-    children: [],
   },
   {
     key: "contact_us",
@@ -37,8 +35,23 @@ export function Header() {
   const [current, setCurrent] = useState("mail");
 
   const onClick: MenuProps["onClick"] = (e) => {
-    console.log("click ", e);
     setCurrent(e.key);
+    switch (e.key) {
+      case "solutions":
+        break;
+      case "how_to_start":
+        break;
+      case "plans":
+        break;
+      case "about_us":
+        window.open("https://sohive.com/aboutus", "_self");
+        break;
+      case "contact_us":
+        window.open("https://sohive.com/contactus", "_self");
+        break;
+      default:
+        break;
+    }
   };
 
   return (
@@ -60,6 +73,7 @@ export function Header() {
       <div className={styles.buttons}>
         <DonwloadButton />
         <Button
+          onClick={() => window.open("https://sohive.com/Login", "_self")}
           style={{
             backgroundColor: "rgba(255, 142, 38, 0.1)",
             color: "#000",
@@ -79,6 +93,7 @@ export function Header() {
           shape="round"
           size="large"
           icon={<SvgIcon ty="sun" />}
+          onClick={() => window.open("https://sohive.com/signup", "_self")}
         >
           Try For Free
         </Button>
@@ -89,33 +104,77 @@ export function Header() {
 
 export function DonwloadButton() {
   return (
-    <Button
-      style={{
-        backgroundColor: "#ECEFF9",
-        borderColor: "#6689FF",
-        color: "#000",
-        fontSize: 14,
+    <Popover
+      styles={{
+        container: { background: "linear-gradient(#F4A64B 0% , #C26D00 100%)" },
+        content: {
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        },
+        arrow: { color: "#F4A64B" },
       }}
-      color="primary"
-      variant="outlined"
-      shape="round"
-      size="large"
-      icon={
+      trigger={"click"}
+      content={
         <div
           style={{
-            display: "inline-flex",
-            justifyContent: "flex-start",
+            width: "100%",
+            display: "flex",
             alignItems: "center",
+            justifyContent: "center",
+            flexDirection: "column",
             gap: 8,
-            height: "100%",
           }}
         >
-          <SvgIcon ty="ios" />
-          <SvgIcon ty="google_shop" />
+          <div style={{ color: "#fff" }}>Scan to download the app</div>
+          <img src="/qrcode.png"></img>
         </div>
       }
     >
-      Download
-    </Button>
+      <Button
+        style={{
+          backgroundColor: "#ECEFF9",
+          borderColor: "#6689FF",
+          color: "#000",
+          fontSize: 14,
+        }}
+        color="primary"
+        variant="outlined"
+        shape="round"
+        size="large"
+        icon={
+          <div
+            style={{
+              display: "inline-flex",
+              justifyContent: "flex-start",
+              alignItems: "center",
+              gap: 8,
+              height: "100%",
+            }}
+          >
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="80" height="80" x="336" y="336" rx="8" ry="8"></rect>
+              <rect width="64" height="64" x="272" y="272" rx="8" ry="8"></rect>
+              <rect width="64" height="64" x="416" y="416" rx="8" ry="8"></rect>
+              <rect width="48" height="48" x="432" y="272" rx="8" ry="8"></rect>
+              <rect width="48" height="48" x="272" y="432" rx="8" ry="8"></rect>
+              <path d="M448 32H304a32 32 0 0 0-32 32v144a32 32 0 0 0 32 32h144a32 32 0 0 0 32-32V64a32 32 0 0 0-32-32zm-32 136a8 8 0 0 1-8 8h-64a8 8 0 0 1-8-8v-64a8 8 0 0 1 8-8h64a8 8 0 0 1 8 8zM208 32H64a32 32 0 0 0-32 32v144a32 32 0 0 0 32 32h144a32 32 0 0 0 32-32V64a32 32 0 0 0-32-32zm-32 136a8 8 0 0 1-8 8h-64a8 8 0 0 1-8-8v-64a8 8 0 0 1 8-8h64a8 8 0 0 1 8 8zm32 104H64a32 32 0 0 0-32 32v144a32 32 0 0 0 32 32h144a32 32 0 0 0 32-32V304a32 32 0 0 0-32-32zm-32 136a8 8 0 0 1-8 8h-64a8 8 0 0 1-8-8v-64a8 8 0 0 1 8-8h64a8 8 0 0 1 8 8z"></path>
+            </svg>
+            <SvgIcon ty="ios" />
+            <SvgIcon ty="google_shop" />
+          </div>
+        }
+      >
+        Download
+      </Button>
+    </Popover>
   );
 }
