@@ -8,25 +8,21 @@ export function Section7() {
   const list = [
     {
       title: "What is SoHive?",
-      content: `SoHive provides businesses with their own virtual room, or "Hive,"
-            allowing them to host live office hours or schedule time with
-            customers or the community. Think of it as your business's
-            video-enabled virtual address, which can be easily added to your
-            website, or social media, or shared as a unique URL.`,
+      content: `SoHive provides businesses with their own virtual room, or “hive,” allowing them to host live, drop-in video office hours on their own website. Think of it as your business’s video-enabled virtual address, which can be easily added to your website, or social media, or shared as a unique URL. Anyone can join it instantly without an invitation.`,
     },
     {
       title: "Is SoHive right for my business?",
-      content: "",
+      content: "SoHive is perfect for any organization who wants to increase customer satisfaction through personalized engagement. With SoHive, it’s effortless for customers to instantly drop into your virtual room to engage in interactive, visual product launches/sales, market research, customer training, customer support, or simply to attract new prospects.",
     },
-    { title: "What's in it for me?", content: "" },
-    { title: "Will SoHive work for my business?", content: "" },
-    { title: "How long does it take to set up?", content: "" },
-    { title: "What do I need to do?", content: "" },
-    { title: "Why should I start using SoHive now?", content: "" },
-    { title: "How is SoHive different from other products?", content: "" },
-    { title: "What's included with SoHive?", content: "" },
-    { title: "What if SoHive doesn’t work for me?", content: "" },
-    { title: "How can I get started with SoHive?", content: "" },
+    { title: "What's in it for me?", content: "Many prospects browse your website but never connect. SoHive helps increase conversions with its seamless drop-in video feature. Unlike paying for ads on other platforms, SoHive drives traffic directly to your website, keeping all interactions within your space, where your intellectual property is located.No website? No problem! Each Hive has a unique, dedicated URL, perfect for testing new ideas without heavy investment. Even without a website, businesses can create a Hive and enable customers to interact instantly." },
+    { title: "Will SoHive work for my business?", content: "Yes, any business with a website or social media can create a “hive,” a virtual room. Personalize your interaction in video by demonstrating your product live, answer questions about your services, sell in real-time." },
+    { title: "How long does it take to set up?", content: "Set up a drop-in video widget on your site in under 15 minutes. Once your virtual room, or “hive” is created, simply embed a small code snippet on your website or social media site in minutes. See the SoHive tile or hexagon widget instantly appear on your site." },
+    { title: "What do I need to do?", content: "SoHive is currently free. Just create an account, set up your business profile, and define your virtual room, or “hive” parameters, such as schedule and participant limits and whether it is private or public. Once your Hive widget is added to your website or social media sites, customers can engage with you immediately via drop-in video." },
+    { title: "Why should I start using SoHive now?", content: "Be human! Be the company that does not present the face of AI as their entry-point to their website. Video and cloud technology have advanced, making drop-in video scalable and secure. Stay ahead of your competition by adopting this innovative way to connect with your customers instantly." },
+    { title: "How is SoHive different from other products?", content: "Unlike other platforms, which require frequent link updates and invitations, SoHive offers a perpetual meeting series that never needs to be updated. Anyone can drop in without an invitation, capturing user information seamlessly (e.g., name and email address). The Hive Live Stream broadcasts all live Hives across the globe, displaying the time zone, business name, and description." },
+    { title: "What's included with SoHive?", content: "Your SoHive account includes everything you need to create a virtual room with drop-in video capabilities. Set up your virtual room, or “hive” quickly and start engaging with customers in minutes." },
+    { title: "What if SoHive doesn’t work for me?", content: "SoHive is currently free, so you can try it RISK FREE! We value feedback from our users. If you face any issues, have suggestions, use the customer feedback form or contact our Customer Service Team. Join our happy customers and start your Hive (virtual room) today!" },
+    { title: "How can I get started with SoHive?", content: "Visit Sohive.com to create your account, fill out your profile, set up your Hive, and embed it on your website or social media. Become a part of the SoHive community and watch customers drop into your virtual room, or “hive” effortlessly! Increase your conversions and customer satisfaction today!" },
   ];
 
   const [openKey, setOpenKey] = useState<number[]>([]);

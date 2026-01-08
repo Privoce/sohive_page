@@ -212,7 +212,7 @@ export function Section3() {
           *SoHive helps you embrace these trends
         </span>{" "}
         to boost engagement, personalization and growth */}
-        <div className={styles.section4_left_header} style={{width: "fit-content"}}>
+        {/* <div className={styles.section4_left_header} style={{width: "fit-content"}}>
           <div>
             <SvgIcon ty="logo_only"></SvgIcon>
           </div>
@@ -235,7 +235,7 @@ export function Section3() {
               </span>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

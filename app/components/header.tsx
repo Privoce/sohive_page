@@ -95,7 +95,7 @@ export function Header() {
           icon={<SvgIcon ty="sun" />}
           onClick={() => window.open("https://sohive.com/signup", "_self")}
         >
-          Try For Free
+          Start For Free
         </Button>
       </div>
     </div>

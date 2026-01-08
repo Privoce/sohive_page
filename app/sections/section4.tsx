@@ -7,14 +7,27 @@ export function Section4() {
   const list = [
     {
       title: "Boost your Online Brand",
-      content: `Reflect your brand with a personalized Hive. Set your schedule,
-              choose public or private access, and embed it effortlessly on your
-              website for enhanced customer engagement solutions.`,
+      content: `Reflect your brand with a personalized Hive. Set your live office hours schedule, choose public or private access, and embed it effortlessly on your website to enhance customer engagement.`,
       icon: true,
     },
-    { title: "Drop-In Video", content: "", icon: true },
-    { title: "Always Available, Anywhere", content: "", icon: true },
-    { title: "Global Reach, Local Touch", content: "", icon: true },
+    {
+      title: "Drop-In Video",
+      content:
+        "Instantly connect with customers through interactive drop-in sessions. No logins or special equipment are needed. Break down barriers to digital customer engagement, while increasing conversions, with easy access for all — without invitations.",
+      icon: true,
+    },
+    {
+      title: "Always Available, Anywhere",
+      content:
+        "Host meetings anytime, anywhere, with anyone — whether in the office, on the go, or at home. Enable customers to drop-in to your virtual room via any device including PC, iPad, and mobile devices.",
+      icon: true,
+    },
+    {
+      title: "Global Reach, Local Touch",
+      content:
+        "Highly scalable for businesses of all sizes, SoHive is the ideal virtual engagement platform for achieving both global and local engagement. Personalize your customer community with interactive video engagement. ",
+      icon: true,
+    },
   ];
 
   const [openKey, setOpenKey] = useState<number[]>([0]);
